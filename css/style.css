@@ -8,7 +8,7 @@
  box-sizing: border-box;
 }
 
-/* for font round off */
+/* for font round off font size */
 html,
 body {
  font-size: 62.5%;
@@ -53,12 +53,13 @@ font-family: 'Poppins', sans-serif;
  margin-bottom: 2.4rem;
  position: relative;
  z-index: -1;
+ text-transform: uppercase;
 }
 
 /* h3 white color */
 .h3-light {
  font-family: "Josefin Sans", sans-serif;
- font-size: 1.6rem;
+ font-size: 1.8rem;
  color: var(--whiteColor);
  margin-bottom: 0.8rem;
 }
@@ -120,3 +121,226 @@ a {
 
 /********** Utilitys End**********/
 /***********************************/
+
+/********** Header Start**********/
+/***********************************/
+
+/* hero */
+.head {
+ background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("../img/main-bg.jpg");
+ width: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ position: relative;
+}
+
+/* navbar */
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 2% 5%;
+ width: 100%;
+ position: fixed;
+ left: 0;
+ top: 0;
+ border-bottom: 1px solid #ffffff1a;
+}
+
+/* ul */
+.nav-menu {
+ display: flex;
+ position: relative;
+}
+
+/* li */
+.nav-list {
+ list-style-type: none;
+ padding-left: 1.5rem;
+ position: relative;
+}
+
+/* a */
+.nav-link {
+ font-size: 1.6rem;
+ color: var(--whiteColor);
+ transition: all 0.2s ease-in-out;
+ position: relative;
+ display: block;
+ padding-left: 3rem;
+}
+
+.nav-link:hover,
+.nav-link.current {
+ color: var(--primaryColor);
+}
+
+/* logo */
+.logo {
+ font-family: "Josefin Sans", sans-serif;
+ font-size: 3rem;
+ color: var(--whiteColor);
+ letter-spacing: 0.1rem;
+ cursor: pointer;
+ position: relative;
+}
+
+.logo-color {
+ color: var(--primaryColor);
+}
+
+/* hamburger */
+.hamburger {
+ display: none;
+}
+
+.hamburger .bar {
+ display: block;
+ width: 2.5rem;
+ height: 0.3rem;
+ margin-bottom: 0.5rem;
+ background-color: var(--whiteColor);
+ transition: all 0.3s ease-in-out;
+}
+
+/* for sticky navar bar big screen style start*/
+/* for navbar */
+.navbar.sticky {
+ padding: 2.2% 5%;
+ background-color: var(--darkNav);
+ transition: all 0.4s ease-in-out;
+ border-bottom: 0;
+ box-shadow: (rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+/* tagline */
+.tag-line {
+ text-align: center;
+ padding: 24rem 0;
+}
+
+/*italic font  */
+.tag-line span {
+ display: block;
+ font-family: "Great Vibes", cursive;
+ font-size: 5rem;
+ color: var(--primaryColor);
+ margin-bottom: -1rem;
+}
+
+/* tagline h1 */
+.tag-line h1 {
+ font-size: 4rem;
+ color: var(--whiteColor);
+ font-family: "Josefin Sans", sans-serif;
+ font-weight: normal;
+ line-height: 1.4;
+ letter-spacing: 0.1rem;
+}
+
+/* tagline p */
+.tag-line .para-tag {
+ font-family: "Poppins", sans-serif;
+ font-size: 1.8rem;
+ color: var(--whiteColor);
+ margin-bottom: 5rem;
+}
+
+/* tagline order button */
+.tag-line .btn .btn-order {
+ padding: 1.5rem 3rem;
+ background-color: var(--primaryColor);
+ font-size: 1.4rem;
+ color: #000;
+ margin-right: 2rem;
+ transition: all 0.3s ease-in-out;
+}
+
+/* tag line menu button */
+.tag-line .btn .btn-menu {
+ padding: 1.5rem 3rem;
+ border: 1px solid var(--whiteColor);
+ font-size: 1.4rem;
+ color: var(--whiteColor);
+ transition: all 0.3s ease-in-out;
+}
+
+/* order hover */
+.tag-line .btn .btn-order:hover {
+ background-color: transparent;
+ border: 1px solid var(--whiteColor);
+ color: var(--whiteColor);
+}
+
+/* menu hover */
+.tag-line .btn .btn-menu:hover {
+ background-color: var(--primaryColor);
+ color: #000;
+}
+/********** Header End**********/
+/***********************************/
+.sec2 {
+ height: 200vh;
+ background-color: var(--darkNav);
+}
+
+/********** Media Query For Mobile Start**********/
+/***********************************************/
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+ /********** Header Start**********/
+
+ /* responsive Navbar */
+ .nav-menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  background-color: var(--darkNav);
+  flex-direction: column;
+  width: 100%;
+ }
+
+ .nav-list {
+  margin: 2rem auto;
+ }
+
+ .nav-list,
+ .nav-link {
+  padding-left: 0;
+ }
+
+ .hamburger {
+  display: block;
+ }
+
+ /* eventlistner for sticky and active*/
+ /* when we click on hamburger */
+ .navbar.active {
+  background-color: var(--darkNav);
+ }
+
+ .nav-menu.active {
+  top: 4rem;
+ }
+
+ /* hamburger transform */
+ .hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(-45deg);
+ }
+ .hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+ }
+ .hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(45deg);
+ }
+
+ /* hamburger color */
+ .hamburger.active .bar {
+  background-color: var(--primaryColor);
+ }
+
+ /********** Header End**********/
+}
+
+/********** Media Query For Mobile End**********/
+/***********************************************/
