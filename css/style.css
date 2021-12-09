@@ -1,0 +1,122 @@
+/********** Utilitys Start**********/
+/***********************************/
+
+/* universal */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* for font round off */
+html,
+body {
+ font-size: 62.5%;
+}
+
+/* 
+font-family: 'Great Vibes', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+/* function */
+:root {
+ --primaryColor: #c49b63;
+ --darkBg: #120f0f;
+ --darkNav: #151111;
+ --whiteColor: #fff;
+ --offWhite: #ffffffe6;
+ --gray: #808080;
+ --lightGray: #bfbfbf;
+}
+
+/* common class start*/
+
+/* italic font */
+.subHeading {
+ display: block;
+ font-family: "Great Vibes", cursive;
+ font-size: 5rem;
+ color: var(--primaryColor);
+ margin-bottom: -2.1rem;
+ line-height: 1;
+ z-index: 1;
+}
+
+/* h2 */
+.h2 {
+ font-family: "Josefin Sans", sans-serif;
+ font-size: 4rem;
+ font-weight: 700;
+ color: var(--whiteColor);
+ margin-bottom: 2.4rem;
+ position: relative;
+ z-index: -1;
+}
+
+/* h3 white color */
+.h3-light {
+ font-family: "Josefin Sans", sans-serif;
+ font-size: 1.6rem;
+ color: var(--whiteColor);
+ margin-bottom: 0.8rem;
+}
+
+/* h3 black color */
+.h3-dark {
+ font-family: "Josefin Sans", sans-serif;
+ font-size: 1.8rem;
+ color: #000;
+ margin-bottom: 2rem;
+}
+
+/* h5 */
+.h5 {
+ font-family: "Josefin Sans", sans-serif;
+ font-size: 1.6rem;
+ font-weight: 400;
+ margin-bottom: 4rem;
+ letter-spacing: 0.1rem;
+ position: relative;
+}
+
+/* p light */
+.para-light {
+ font-family: "Poppins", sans-serif;
+ font-size: 1.5rem;
+ color: var(--whiteColor);
+ margin-bottom: 1.6rem;
+}
+
+/* p dark */
+.para-dark {
+ font-family: "Poppins", sans-serif;
+ font-size: 1.5rem;
+ color: var(--gray);
+ margin-bottom: 1.6rem;
+}
+
+button,
+input,
+textarea {
+ font-family: "Poppins", sans-serif;
+}
+
+/* a tag */
+a {
+ text-decoration: none;
+ font-family: "Poppins", sans-serif;
+}
+
+/* container */
+.container {
+ max-width: 80%;
+ margin: 0 auto;
+ padding: 4% 0;
+}
+
+/* common class end*/
+
+/********** Utilitys End**********/
+/***********************************/
