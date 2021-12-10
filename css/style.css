@@ -642,6 +642,92 @@ a {
 /**********Section 8 Testimony End***************/
 /**************************************************/
 
+/**********Section 9 Contact Start****************/
+/**************************************************/
+.sec9 {
+ width: 100%;
+ background-image: url("/img/bg.jpg");
+}
+
+/* contact container */
+.contact {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+/* common width for both child */
+.contact .contact-common {
+ width: 45%;
+}
+
+/* left child map */
+.contact-common .left-map {
+ width: 100%;
+}
+
+/* right form h3 */
+.contact-common h3 {
+ font-family: "Josefin Sans", sans-serif;
+ font-size: 3rem;
+ font-weight: 400;
+ color: var(--whiteColor);
+ margin-bottom: 1rem;
+}
+
+/* form */
+.contact-form .form-group-name {
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+}
+
+.contact-form .form-group-details {
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+}
+.contact-form .form-group-message {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+}
+
+/* input and text area */
+input,
+textarea {
+ width: 48%;
+ padding: 2rem 0;
+ background-color: transparent;
+ border: 0;
+ color: var(--gray);
+ border-bottom: 1px solid #ffffff1a;
+ resize: none;
+}
+
+input:focus,
+textarea:focus {
+ outline: none;
+}
+
+/* form btn */
+.btn-form {
+ background-color: var(--primaryColor);
+ padding: 1rem 2rem;
+ width: 48%;
+ border: none;
+ cursor: pointer;
+ transition: all 0.3s ease-in-out;
+}
+.btn-form:hover {
+ background-color: transparent;
+ color: var(--whiteColor);
+ border: 1px solid var(--primaryColor);
+}
+
+/**********Section 9 Contact End*******************/
+/**************************************************/
+
 /********** Media Query For Mobile Start**********/
 /***********************************************/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
