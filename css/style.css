@@ -39,9 +39,8 @@ font-family: 'Poppins', sans-serif;
  font-family: "Great Vibes", cursive;
  font-size: 5rem;
  color: var(--primaryColor);
- margin-bottom: -2.1rem;
- line-height: 1;
- z-index: 1;
+ margin-bottom: -1.9rem;
+ /* z-index: 1; */
 }
 
 /* h2 */
@@ -52,7 +51,7 @@ font-family: 'Poppins', sans-serif;
  color: var(--whiteColor);
  margin-bottom: 2.4rem;
  position: relative;
- z-index: -1;
+ /* z-index: -1; */
  text-transform: uppercase;
 }
 
@@ -70,6 +69,7 @@ font-family: 'Poppins', sans-serif;
  font-size: 1.8rem;
  color: #000;
  margin-bottom: 2rem;
+ font-weight: 400;
 }
 
 /* h5 */
@@ -77,6 +77,7 @@ font-family: 'Poppins', sans-serif;
  font-family: "Josefin Sans", sans-serif;
  font-size: 1.6rem;
  font-weight: 400;
+ color: var(--whiteColor);
  margin-bottom: 4rem;
  letter-spacing: 0.1rem;
  position: relative;
@@ -90,6 +91,14 @@ font-family: 'Poppins', sans-serif;
  margin-bottom: 1.6rem;
 }
 
+/* p mid */
+.para-mid {
+ font-family: "Poppins", sans-serif;
+ font-size: 1.5rem;
+ color: #1d150b;
+ margin-bottom: 1.6rem;
+}
+
 /* p dark */
 .para-dark {
  font-family: "Poppins", sans-serif;
@@ -98,10 +107,34 @@ font-family: 'Poppins', sans-serif;
  margin-bottom: 1.6rem;
 }
 
+/* top p tag for inline block*/
+.top-para {
+ display: inline-block;
+ max-width: 57%;
+ margin-bottom: 10rem;
+}
 button,
 input,
 textarea {
  font-family: "Poppins", sans-serif;
+}
+
+/* button style */
+.btn-style {
+ display: inline-block;
+ padding: 1.3rem 3rem;
+ border: 1px solid var(--primaryColor);
+ font-size: 1.4rem;
+ color: var(--primaryColor);
+ transition: all 0.3s ease-in-out;
+ margin-top: 1.5rem;
+}
+
+/* button style hover */
+.btn-style:hover {
+ background-color: var(--primaryColor);
+ color: var(--whiteColor);
+ border: 1px solid var(--primaryColor);
 }
 
 /* a tag */
@@ -146,6 +179,7 @@ a {
  left: 0;
  top: 0;
  border-bottom: 1px solid #ffffff1a;
+ z-index: 2;
 }
 
 /* ul */
@@ -217,7 +251,7 @@ a {
 /* tagline */
 .tag-line {
  text-align: center;
- padding: 24rem 0;
+ padding: 24rem 0 25rem;
 }
 
 /*italic font  */
@@ -257,15 +291,6 @@ a {
  transition: all 0.3s ease-in-out;
 }
 
-/* tag line menu button */
-.tag-line .btn .btn-menu {
- padding: 1.5rem 3rem;
- border: 1px solid var(--whiteColor);
- font-size: 1.4rem;
- color: var(--whiteColor);
- transition: all 0.3s ease-in-out;
-}
-
 /* order hover */
 .tag-line .btn .btn-order:hover {
  background-color: transparent;
@@ -273,24 +298,356 @@ a {
  color: var(--whiteColor);
 }
 
-/* menu hover */
-.tag-line .btn .btn-menu:hover {
- background-color: var(--primaryColor);
- color: #000;
-}
 /********** Header End**********/
 /***********************************/
-.sec2 {
- height: 200vh;
- background-color: var(--darkNav);
+
+/**********Section 1 Cafe info Start**********/
+/******************************************/
+.sec1 {
+ width: 100%;
+ background-color: var(--darkBg);
 }
+
+.cafe-info {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+}
+
+.cafe-info .info-common {
+ display: flex;
+ width: 30%;
+}
+.info-common .icon {
+ width: 10%;
+ color: var(--primaryColor);
+ font-size: 1.6rem;
+}
+
+.info-common .text {
+ width: 70%;
+}
+/**********Section 1 Cafe info End**********/
+/******************************************/
+
+/**********Section 2 Our story start**********/
+/*********************************************/
+.sec2 {
+ width: 100%;
+ background-image: url("../img/bg.jpg");
+ background-attachment: fixed;
+}
+
+.our-story {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: relative;
+}
+
+.our-story .story-common {
+ width: 50%;
+}
+
+.our-story img {
+ width: 100%;
+}
+
+.our-story .right-text {
+ position: absolute;
+ right: 20rem;
+ background-color: #0000009e;
+ padding: 4rem;
+}
+/**********Section 2 Our story End************/
+/*********************************************/
+
+/**********Section 3 Delivery Sec Start************/
+/*************************************************/
+.sec3 {
+ width: 100%;
+ background-color: var(--primaryColor);
+}
+.delivery {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-align: center;
+}
+.delivery-common {
+ width: 30%;
+}
+.delivery-common .delivery-icon {
+ font-size: 3rem;
+ margin: 0 auto 6rem;
+ border: 1px solid #674c27;
+ padding: 4rem;
+}
+/**********Section 3 Delivery Sec End************/
+/************************************************/
+
+/**********Section 4 Our Menu Start************/
+/************************************************/
+.sec4 {
+ width: 100%;
+ background-image: url("/img/bg.jpg");
+ background-attachment: fixed;
+}
+
+.menu {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-align: right;
+}
+
+.menu .menu-common {
+ width: 49%;
+}
+
+/* menu img section */
+.menu-img {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ gap: 2rem;
+}
+
+.menu-img .img-common {
+ width: 48%;
+}
+
+.menu .menu-img img {
+ width: 100%;
+}
+
+/**********Section 4 Our Menu End***************/
+/************************************************/
+
+/**********Section 5 Store Details Counter Start***************/
+/**************************************************************/
+.sec5 {
+ width: 100%;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("/img/counter-bg.jpg");
+ background-position: center center;
+ background-size: cover;
+ background-attachment: fixed;
+ padding-top: 3rem;
+}
+.counter-container {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.counter {
+ text-align: center;
+}
+
+.counter-icon {
+ font-size: 2.8rem;
+ color: var(--primaryColor);
+ border: 1px solid var(--primaryColor);
+ padding: 3rem;
+ margin-bottom: 3rem;
+ transition: all 0.5s ease-in-out;
+ cursor: pointer;
+}
+
+.counter-icon:hover {
+ transform: rotate(360deg);
+ background-color: var(--primaryColor);
+ color: var(--darkBg);
+}
+.counter h3 {
+ font-family: "Josefin Sans", sans-serif;
+ font-size: 3rem;
+ color: var(--primaryColor);
+ margin-bottom: 1rem;
+ font-weight: 500;
+}
+
+.counter h5 {
+ font-family: "Poppins", sans-serif;
+ font-size: 1.6rem;
+ font-weight: 400;
+ color: var(--whiteColor);
+ margin-bottom: 4rem;
+ letter-spacing: 0.1rem;
+}
+/**********Section 5 Store Details Counter End***************/
+/************************************************************/
+
+/**********Section 6 Coffee Best Seller Start***************/
+/************************************************************/
+.sec6 {
+ width: 100%;
+ background-image: url("/img/bg.jpg");
+ background-attachment: fixed;
+ text-align: center;
+}
+
+.best-seller {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.best-seller .seller-common {
+ width: 23%;
+}
+.best-seller .seller-common img {
+ width: 100%;
+ margin-bottom: 2rem;
+}
+.best-seller .seller-common span {
+ display: block;
+}
+
+/* img gallery */
+.img-gallery {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ /* background-color: red; */
+ padding: 10rem 0 5rem;
+}
+
+.img-gallery-common {
+ width: 25%;
+}
+.img-gallery-common img {
+ width: 100%;
+}
+/**********Section 6 Coffee Best Seller End***************/
+/************************************************************/
+
+/**********Section 7 Recent Blog Start***************/
+/****************************************************/
+.sec7 {
+ width: 100%;
+ background-image: url("/img/bg.jpg");
+ background-attachment: fixed;
+ text-align: center;
+}
+
+.blogs {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-align: left;
+}
+.blogs .blog-common {
+ width: 30%;
+}
+.blogs .blog-common img {
+ width: 100%;
+ margin-bottom: 1rem;
+}
+
+/*span tag admin  */
+.blog-common span {
+ margin: 0 1rem;
+}
+
+/* icon */
+.blog-common .blog-icon {
+ margin-right: 0.6rem;
+ color: var(--primaryColor);
+}
+
+/* a tag for color and weight */
+.blog-common a {
+ font-weight: 400;
+ color: var(--whiteColor);
+}
+.blog-common a:hover {
+ color: var(--primaryColor);
+}
+
+/**********Section 7 Recent Blog End***************/
+/**************************************************/
+
+/**********Section 8 Testimony Start***************/
+/**************************************************/
+.sec8 {
+ width: 100%;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  url("/img/sec-bg.jpg");
+ background-position: center top;
+ background-attachment: fixed;
+ background-size: cover;
+ text-align: center;
+}
+
+.testimony {
+ display: flex;
+ align-items: flex-end;
+ text-align: left;
+}
+
+.testimony .testimony-common {
+ background-color: var(--primaryColor);
+ width: 20%;
+ padding: 3rem;
+}
+
+/*2 and 4 test background color change */
+.testimony .test2,
+.testimony .test4 {
+ background-color: #a88553;
+}
+
+/* customer testimony para edit because .para-light has less margin-bottom etc.*/
+.testimony .testimony-common .para-light {
+ line-height: 3rem;
+ font-size: 1.6rem;
+ margin-bottom: 4rem;
+}
+
+/* for bottom customer img and text use felx in customer */
+.customer {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+/* customer img 1st child*/
+.customer .customer-img {
+ width: 20%;
+}
+.customer .customer-img img {
+ width: 100%;
+ border-radius: 50%;
+}
+
+/* customer text 2nd child*/
+.customer .customer-text {
+ width: 75%;
+}
+
+/* .para-light for less margin bottom */
+.customer .customer-text .para-light {
+ margin-bottom: 0.5rem;
+}
+
+/* customer position */
+.customer .customer-text span {
+ font-size: 1rem;
+ color: var(--whiteColor);
+ font-family: "Poppins", sans-serif;
+}
+
+/**********Section 8 Testimony End***************/
+/**************************************************/
 
 /********** Media Query For Mobile Start**********/
 /***********************************************/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
  /********** Header Start**********/
 
- /* responsive Navbar */
+ /* responsive Navbar start*/
  .nav-menu {
   position: fixed;
   top: -100%;
@@ -338,7 +695,7 @@ a {
  .hamburger.active .bar {
   background-color: var(--primaryColor);
  }
-
+ /* responsive Navbar End*/
  /********** Header End**********/
 }
 
