@@ -147,7 +147,7 @@ a {
 .container {
  max-width: 80%;
  margin: 0 auto;
- padding: 4% 0;
+ padding: 5% 0;
 }
 
 /* common class end*/
@@ -676,17 +676,13 @@ a {
 }
 
 /* form */
-.contact-form .form-group-name {
- width: 100%;
- display: flex;
- justify-content: space-between;
-}
-
+.contact-form .form-group-name,
 .contact-form .form-group-details {
  width: 100%;
  display: flex;
  justify-content: space-between;
 }
+
 .contact-form .form-group-message {
  display: flex;
  justify-content: space-between;
@@ -724,12 +720,74 @@ textarea:focus {
  color: var(--whiteColor);
  border: 1px solid var(--primaryColor);
 }
-
 /**********Section 9 Contact End*******************/
+/**************************************************/
+
+/**********Section 10 Footer Start*******************/
+/**************************************************/
+.sec10 {
+ width: 100%;
+ background-color: var(--darkBg);
+ text-align: center;
+}
+.footer {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ text-align: left;
+}
+
+/* footer about section */
+.footer .foot-about {
+ width: 19%;
+}
+
+.foot-about .about-ul {
+ display: flex;
+ justify-content: flex-start;
+}
+.about-ul li {
+ list-style: none;
+ margin: 2rem 4rem 0 0;
+}
+
+.about-ul .foot-icon {
+ font-size: 2rem;
+ color: var(--whiteColor);
+ padding: 1rem;
+ border-radius: 50%;
+ background-color: #ffffff0d;
+}
+
+/* foot blog */
+.footer .foot-blog {
+ width: 49%;
+ /* display: none; */
+}
+.recent-blog-common {
+ display: flex;
+ justify-content: space-between;
+}
+.recent-blog-common .recent-blog-img {
+ width: 20%;
+}
+.recent-blog-common .recent-blog-img img {
+ width: 100%;
+}
+
+/* foot service */
+.footer .foot-service {
+ width: 9%;
+}
+.footer .foot-question {
+ width: 19%;
+}
+/**********Section 10 Footer End*******************/
 /**************************************************/
 
 /********** Media Query For Mobile Start**********/
 /***********************************************/
+
 @media only screen and (min-width: 280px) and (max-width: 768px) {
  /********** Header Start**********/
 
