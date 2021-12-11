@@ -735,23 +735,27 @@ textarea:focus {
  justify-content: space-between;
  align-items: flex-start;
  text-align: left;
+ padding-bottom: 12rem;
 }
 
-/* footer about section */
+/* FOOT ABOUT US */
 .footer .foot-about {
  width: 19%;
 }
 
+/* ul */
 .foot-about .about-ul {
  display: flex;
  justify-content: flex-start;
 }
+
 .about-ul li {
  list-style: none;
  margin: 2rem 4rem 0 0;
 }
 
-.about-ul .foot-icon {
+/* about icon */
+.about-ul .about-icon {
  font-size: 2rem;
  color: var(--whiteColor);
  padding: 1rem;
@@ -759,28 +763,75 @@ textarea:focus {
  background-color: #ffffff0d;
 }
 
-/* foot blog */
+/* FOOT RECENT BLOG*/
 .footer .foot-blog {
- width: 49%;
- /* display: none; */
+ width: 35%;
 }
+
 .recent-blog-common {
  display: flex;
- justify-content: space-between;
+ gap: 2rem;
 }
+
+/* recent blog img */
 .recent-blog-common .recent-blog-img {
  width: 20%;
 }
+
 .recent-blog-common .recent-blog-img img {
  width: 100%;
 }
 
-/* foot service */
-.footer .foot-service {
- width: 9%;
+/* recent blog text */
+.recent-blog-text h5 {
+ font-size: 1.4rem;
+ width: 75%;
 }
+
+.recent-blog-text a {
+ color: var(--whiteColor);
+ font-weight: 400;
+}
+
+/*span tag admin  */
+.recent-blog-text span {
+ margin: 0 1rem;
+}
+
+/* icon */
+.recent-blog-text .blog-icon {
+ margin-right: 0.6rem;
+ color: var(--primaryColor);
+}
+
+/* FOOT SERVICE */
+.footer .foot-service {
+ width: 14%;
+}
+.foot-service .service-ul li {
+ list-style-type: none;
+ font-size: 1.4rem;
+ margin-bottom: 2rem;
+ font-family: "Poppins", sans-serif;
+ color: var(--gray);
+}
+
+/* FOOT QUESTION */
 .footer .foot-question {
- width: 19%;
+ width: 25%;
+}
+.common-que {
+ display: flex;
+}
+.common-que .que-icon {
+ font-size: 1.5rem;
+ margin-right: 1.5rem;
+ color: var(--whiteColor);
+}
+
+/* COPYRIGHT */
+.copyright {
+ padding-bottom: 10rem;
 }
 /**********Section 10 Footer End*******************/
 /**************************************************/
