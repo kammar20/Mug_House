@@ -51,7 +51,6 @@ font-family: 'Poppins', sans-serif;
  color: var(--whiteColor);
  margin-bottom: 2.4rem;
  position: relative;
- /* z-index: -1; */
  text-transform: uppercase;
 }
 
@@ -149,7 +148,6 @@ a {
  margin: 0 auto;
  padding: 5% 0;
 }
-
 /* common class end*/
 
 /********** Utilitys End**********/
@@ -173,7 +171,7 @@ a {
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding: 2% 5%;
+ padding: 1.5% 5%;
  width: 100%;
  position: fixed;
  left: 0;
@@ -241,11 +239,11 @@ a {
 /* for sticky navar bar big screen style start*/
 /* for navbar */
 .navbar.sticky {
- padding: 2.2% 5%;
+ padding: 2% 5%;
  background-color: var(--darkNav);
  transition: all 0.4s ease-in-out;
  border-bottom: 0;
- box-shadow: (rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+ box-shadow: (rgba(252, 252, 252, 0.7), rgba(235, 235, 235, 0.7));
 }
 
 /* tagline */
@@ -735,7 +733,7 @@ textarea:focus {
  justify-content: space-between;
  align-items: flex-start;
  text-align: left;
- padding-bottom: 12rem;
+ padding-bottom: 15rem;
 }
 
 /* FOOT ABOUT US */
@@ -831,7 +829,7 @@ textarea:focus {
 
 /* COPYRIGHT */
 .copyright {
- padding-bottom: 10rem;
+ padding-bottom: 12rem;
 }
 /**********Section 10 Footer End*******************/
 /**************************************************/
