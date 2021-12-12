@@ -2,6 +2,7 @@
 /***********************************/
 
 /* transform: translateY(-1rem); */
+
 /* universal */
 * {
  margin: 0;
@@ -535,13 +536,14 @@ a {
  justify-content: space-between;
  align-items: center;
  text-align: left;
+ flex-flow: row wrap;
 }
 .blogs .blog-common {
  width: 30%;
 }
 .blogs .blog-common img {
  width: 100%;
- margin-bottom: 1rem;
+ margin: 2rem 0 1rem;
 }
 
 /*span tag admin  */
@@ -835,6 +837,74 @@ textarea:focus {
 /**********Section 10 Footer End*******************/
 /**************************************************/
 
+/**********NEW PAGE HEAD COMMON START**********************/
+/*********************************************************/
+.common-head {
+ background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  url("../img/sec-bg.jpg");
+ width: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ position: relative;
+}
+
+.common-tag-line {
+ text-align: center;
+ padding: 35rem 0 35rem;
+}
+
+.top-page-info {
+ font-size: 1.4rem;
+ color: var(--whiteColor);
+ text-decoration: none;
+ margin-right: 1rem;
+ letter-spacing: 0.1rem;
+}
+.top-current {
+ color: var(--gray);
+ transition: all 0.2s ease-in-out;
+}
+.top-current:hover {
+ color: var(--whiteColor);
+ text-decoration: underline;
+}
+/**********NEW PAGE HEAD COMMON END**********************/
+/*********************************************************/
+
+/****************ABOUT PAGE START **********************/
+/*******************************************************/
+
+/* Our Chef Section */
+.chef-sec {
+ width: 100%;
+ background-color: var(--darkBg);
+ text-align: center;
+}
+
+.chef-gallery {
+ display: flex;
+ justify-content: space-between;
+}
+
+.chef-gallery .chef-common {
+ width: 24%;
+ text-align: left;
+}
+
+.chef-gallery .chef-common img {
+ width: 100%;
+ margin-bottom: 2rem;
+}
+
+.chef-hr {
+ width: 15%;
+ margin-bottom: 3rem;
+ color: var(--primColor);
+}
+/**********ABOUT PAGE End **********************/
+/**************************************************/
+
 /********** Media Query For Mobile Start**********/
 /***********************************************/
 
@@ -870,15 +940,14 @@ textarea:focus {
  .btn-style {
   margin-bottom: 3rem;
  }
-
  /********** Common Class End**********/
+
  /********** Header Start**********/
-
  /* responsive Navbar start*/
-
  .logo {
   font-size: 2.8rem;
  }
+
  .nav-menu {
   position: fixed;
   top: -100%;
@@ -931,6 +1000,7 @@ textarea:focus {
  .tag-line {
   padding: 19rem 0 15rem;
  }
+
  .tag-line .btn .btn-order {
   margin-right: 0;
  }
@@ -954,6 +1024,7 @@ textarea:focus {
  .our-story {
   flex-flow: column nowrap;
  }
+
  .our-story .story-common {
   width: 100%;
  }
@@ -968,9 +1039,11 @@ textarea:focus {
  .delivery {
   flex-flow: column nowrap;
  }
+
  .delivery-common {
   width: 100%;
  }
+
  .delivery-common .delivery-icon {
   margin: 4rem auto 3rem;
  }
@@ -995,7 +1068,6 @@ textarea:focus {
   width: 100%;
   margin: 2rem auto;
  }
-
  /********** Section 4 Our Menu End*************/
 
  /********** Section 5 Store Details Counter Start*************/
@@ -1003,16 +1075,17 @@ textarea:focus {
   flex-flow: row wrap;
   align-items: flex-start;
  }
+
  .counter {
   width: 50%;
  }
+
  .counter h5 {
   margin-bottom: 2rem;
  }
  /********** Section 5 Store Details Counter End*************/
 
- /********** Section 6 coffee best seller Start*************/
-
+ /********** Section 6 Coffee Best Seller Start*************/
  /* best seller */
  .best-seller {
   flex-flow: column nowrap;
@@ -1037,9 +1110,11 @@ textarea:focus {
  .blogs {
   flex-flow: column nowrap;
  }
+
  .blogs .blog-common {
   width: 100%;
  }
+
  .blogs .blog-common img {
   margin-top: 2rem;
  }
@@ -1071,6 +1146,7 @@ textarea:focus {
  .contact-common .left-map {
   margin: 2rem 0 4rem;
  }
+
  .right-form {
   margin-bottom: 3rem;
  }
@@ -1080,10 +1156,12 @@ textarea:focus {
  .sec10 {
   padding-top: 3rem;
  }
+
  .footer {
   flex-flow: column nowrap;
   padding-bottom: 5rem;
  }
+
  .footer .foot-about,
  .footer .foot-blog,
  .footer .foot-service,
@@ -1119,10 +1197,28 @@ textarea:focus {
  .common-que {
   margin-bottom: 2rem;
  }
+
  .copyright {
   padding-bottom: 6rem;
  }
  /**********Section 10  Footer End**********/
+
+ /****************ABOUT PAGE START *************/
+ .chef-gallery {
+  flex-flow: column nowrap;
+ }
+
+ .chef-gallery .chef-common {
+  width: 100%;
+  text-align: left;
+ }
+
+ .chef-gallery .chef-common img {
+  width: 100%;
+  margin-top: 2rem;
+ }
+
+ /****************ABOUT PAGE END *************/
 }
 
 /********** Media Query For Mobile End**********/
