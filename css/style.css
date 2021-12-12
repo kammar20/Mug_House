@@ -908,9 +908,12 @@ textarea:focus {
 
 /**********MENU PAGE START**********************/
 /**************************************************/
+
+/* menu list */
 .menu-sec {
  width: 100%;
  background-image: url("/img/bg.jpg");
+ background-attachment: fixed;
 }
 
 .menu-container {
@@ -961,7 +964,37 @@ textarea:focus {
  margin-bottom: 3rem;
 }
 
-/**********MENU PAGE END**********************/
+/* menu img */
+
+.menu-img-sec {
+ width: 100%;
+ background-image: url("/img/bg.jpg");
+ background-attachment: fixed;
+ text-align: center;
+}
+
+.best-product {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.best-product .product-common {
+ width: 31%;
+}
+.best-product .product-common img {
+ width: 100%;
+ margin-bottom: 2rem;
+}
+.best-product .product-common span {
+ display: block;
+}
+
+.btn-margin {
+ margin-bottom: 4rem;
+}
+/**********MENU PAGE END***************************/
 /**************************************************/
 
 /********** Media Query For Mobile Start**********/
@@ -1280,6 +1313,8 @@ textarea:focus {
  /****************ABOUT PAGE END *************/
 
  /****************MENU PAGE START *************/
+
+ /* menu list */
  .menu-container {
   flex-flow: column nowrap;
  }
@@ -1294,8 +1329,17 @@ textarea:focus {
  .item-dec {
   font-size: 1rem;
  }
+
+ /* menu img */
+
+ .best-product {
+  flex-flow: column nowrap;
+ }
+
+ .best-product .product-common {
+  width: 100%;
+ }
  /****************MENU PAGE END **************/
 }
-
 /********** Media Query For Mobile End**********/
 /***********************************************/
