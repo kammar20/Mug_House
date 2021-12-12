@@ -1,6 +1,7 @@
 /********** Utilitys Start**********/
 /***********************************/
 
+/* transform: translateY(-1rem); */
 /* universal */
 * {
  margin: 0;
@@ -41,6 +42,16 @@ font-family: 'Poppins', sans-serif;
  color: var(--primaryColor);
  margin-bottom: -1.9rem;
  /* z-index: 1; */
+}
+
+/* h1 */
+.h1 {
+ font-size: 4rem;
+ color: var(--whiteColor);
+ font-family: "Josefin Sans", sans-serif;
+ font-weight: normal;
+ line-height: 1.4;
+ letter-spacing: 0.1rem;
 }
 
 /* h2 */
@@ -171,7 +182,7 @@ a {
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding: 1.5% 5%;
+ padding: 2% 5%;
  width: 100%;
  position: fixed;
  left: 0;
@@ -239,7 +250,7 @@ a {
 /* for sticky navar bar big screen style start*/
 /* for navbar */
 .navbar.sticky {
- padding: 2% 5%;
+ padding: 2.2% 5%;
  background-color: var(--darkNav);
  transition: all 0.4s ease-in-out;
  border-bottom: 0;
@@ -259,16 +270,6 @@ a {
  font-size: 5rem;
  color: var(--primaryColor);
  margin-bottom: -1rem;
-}
-
-/* tagline h1 */
-.tag-line h1 {
- font-size: 4rem;
- color: var(--whiteColor);
- font-family: "Josefin Sans", sans-serif;
- font-weight: normal;
- line-height: 1.4;
- letter-spacing: 0.1rem;
 }
 
 /* tagline p */
@@ -508,7 +509,6 @@ a {
  display: flex;
  justify-content: center;
  align-items: center;
- /* background-color: red; */
  padding: 10rem 0 5rem;
 }
 
@@ -662,6 +662,7 @@ a {
 /* left child map */
 .contact-common .left-map {
  width: 100%;
+ height: 25rem;
 }
 
 /* right form h3 */
@@ -816,7 +817,7 @@ textarea:focus {
 
 /* FOOT QUESTION */
 .footer .foot-question {
- width: 25%;
+ width: 20%;
 }
 .common-que {
  display: flex;
@@ -829,7 +830,7 @@ textarea:focus {
 
 /* COPYRIGHT */
 .copyright {
- padding-bottom: 12rem;
+ padding-bottom: 10rem;
 }
 /**********Section 10 Footer End*******************/
 /**************************************************/
@@ -838,9 +839,46 @@ textarea:focus {
 /***********************************************/
 
 @media only screen and (min-width: 280px) and (max-width: 768px) {
+ /********** Common Class Start**********/
+ .container {
+  max-width: 90%;
+ }
+
+ .subHeading {
+  font-size: 3rem;
+  margin-bottom: -1rem;
+ }
+
+ .h1 {
+  font-size: 3rem;
+ }
+
+ .h2 {
+  font-size: 2.8rem;
+ }
+
+ .h3-light {
+  font-size: 1.6rem;
+  font-weight: 300;
+ }
+
+ .top-para {
+  margin-bottom: 5rem;
+  max-width: 100%;
+ }
+
+ .btn-style {
+  margin-bottom: 3rem;
+ }
+
+ /********** Common Class End**********/
  /********** Header Start**********/
 
  /* responsive Navbar start*/
+
+ .logo {
+  font-size: 2.8rem;
+ }
  .nav-menu {
   position: fixed;
   top: -100%;
@@ -888,8 +926,203 @@ textarea:focus {
  .hamburger.active .bar {
   background-color: var(--primaryColor);
  }
+
+ /* tagline */
+ .tag-line {
+  padding: 19rem 0 15rem;
+ }
+ .tag-line .btn .btn-order {
+  margin-right: 0;
+ }
  /* responsive Navbar End*/
  /********** Header End**********/
+
+ /********** Section 1 cafe info start**********/
+ .cafe-info {
+  flex-flow: column wrap;
+ }
+ .cafe-info .info-common {
+  width: 100%;
+  margin: 2.5rem 0 2rem;
+ }
+ .info-common .text {
+  width: 100%;
+ }
+ /********** Section 1 cafe info End**********/
+
+ /********** Section 2 Our Story Start**********/
+ .our-story {
+  flex-flow: column nowrap;
+ }
+ .our-story .story-common {
+  width: 100%;
+ }
+
+ .our-story .right-text {
+  position: relative;
+  right: 0;
+ }
+ /********** Section 2 Our Story End***********/
+
+ /********** Section 3 Delivery Sec Start***********/
+ .delivery {
+  flex-flow: column nowrap;
+ }
+ .delivery-common {
+  width: 100%;
+ }
+ .delivery-common .delivery-icon {
+  margin: 4rem auto 3rem;
+ }
+ /********** Section 3 Delivery Sec End***********/
+
+ /********** Section 4 Our Menu Start***********/
+ .menu {
+  flex-flow: column nowrap;
+  text-align: center;
+ }
+
+ .menu .menu-common {
+  width: 100%;
+ }
+
+ /* menu img */
+ .menu-img {
+  gap: 0;
+ }
+
+ .menu-img .img-common {
+  width: 100%;
+  margin: 2rem auto;
+ }
+
+ /********** Section 4 Our Menu End*************/
+
+ /********** Section 5 Store Details Counter Start*************/
+ .counter-container {
+  flex-flow: row wrap;
+  align-items: flex-start;
+ }
+ .counter {
+  width: 50%;
+ }
+ .counter h5 {
+  margin-bottom: 2rem;
+ }
+ /********** Section 5 Store Details Counter End*************/
+
+ /********** Section 6 coffee best seller Start*************/
+
+ /* best seller */
+ .best-seller {
+  flex-flow: column nowrap;
+ }
+
+ .best-seller .seller-common {
+  width: 100%;
+ }
+
+ /* img gallery */
+ .img-gallery {
+  flex-flow: column nowrap;
+  padding: 2rem 0 5rem;
+ }
+
+ .img-gallery-common {
+  width: 100%;
+ }
+ /********** Section 6 coffee best seller End**************/
+
+ /********** Section 7 Recent Blog Start**************/
+ .blogs {
+  flex-flow: column nowrap;
+ }
+ .blogs .blog-common {
+  width: 100%;
+ }
+ .blogs .blog-common img {
+  margin-top: 2rem;
+ }
+ /********** Section 7 Recent Blog End****************/
+
+ /**********Section 8 Testimony Start**********/
+ .testimony {
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+ }
+
+ .testimony .testimony-common {
+  width: 100%;
+  padding: 3rem;
+ }
+ /********** Section 8 Testimony End**********/
+
+ /********** Section 9 Contact Start**********/
+ .contact {
+  flex-flow: column nowrap;
+ }
+
+ /* common width for both child */
+ .contact .contact-common {
+  width: 100%;
+ }
+
+ .contact-common .left-map {
+  margin: 2rem 0 4rem;
+ }
+ .right-form {
+  margin-bottom: 3rem;
+ }
+ /********** Section 9 Contact End**********/
+
+ /**********Section 10  Footer Start**********/
+ .sec10 {
+  padding-top: 3rem;
+ }
+ .footer {
+  flex-flow: column nowrap;
+  padding-bottom: 5rem;
+ }
+ .footer .foot-about,
+ .footer .foot-blog,
+ .footer .foot-service,
+ .footer .foot-question {
+  width: 100%;
+ }
+
+ /* about */
+ .foot-about .about-ul {
+  margin-bottom: 5rem;
+ }
+
+ /* blog */
+ .recent-blog-common .recent-blog-img {
+  width: 30%;
+ }
+
+ .recent-blog-text h5 {
+  width: 100%;
+ }
+
+ /* for margin b/w blog and service */
+ .recent-blog2 {
+  margin-bottom: 5rem;
+ }
+
+ /* service */
+ .foot-service .service-ul li:last-child {
+  margin-bottom: 5rem;
+ }
+
+ /* foot question */
+ .common-que {
+  margin-bottom: 2rem;
+ }
+ .copyright {
+  padding-bottom: 6rem;
+ }
+ /**********Section 10  Footer End**********/
 }
 
 /********** Media Query For Mobile End**********/
