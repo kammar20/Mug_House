@@ -863,11 +863,12 @@ textarea:focus {
 }
 .top-current {
  color: var(--gray);
+ text-decoration: underline;
  transition: all 0.2s ease-in-out;
 }
 .top-current:hover {
  color: var(--whiteColor);
- text-decoration: underline;
+ text-decoration: none;
 }
 /**********NEW PAGE HEAD COMMON END**********************/
 /*********************************************************/
@@ -903,6 +904,12 @@ textarea:focus {
  color: var(--primColor);
 }
 /**********ABOUT PAGE End **********************/
+/**************************************************/
+
+/**********MENU PAGE START**********************/
+/**************************************************/
+
+/**********MENU PAGE END**********************/
 /**************************************************/
 
 /********** Media Query For Mobile Start**********/
