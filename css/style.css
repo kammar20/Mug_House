@@ -999,7 +999,7 @@ textarea:focus {
 /********** Media Query For Mobile Start**********/
 /***********************************************/
 
-@media only screen and (min-width: 280px) and (max-width: 768px) {
+@media only screen and (min-width: 280px) and (max-width: 767px) {
  /********** Common Class Start**********/
  .container {
   max-width: 90%;
@@ -1342,3 +1342,148 @@ textarea:focus {
 }
 /********** Media Query For Mobile End**********/
 /***********************************************/
+
+/********** Media Query For Ipad Start**********/
+/***********************************************/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+ /********** Section 2 Our Story Start**********/
+ .our-story {
+  flex-flow: column nowrap;
+ }
+
+ .our-story .story-common {
+  width: 100%;
+ }
+
+ .our-story .right-text {
+  position: relative;
+  right: 0;
+ }
+
+ /********** Section 4 Our Menu Start***********/
+ .menu {
+  flex-flow: row wrap;
+  text-align: center;
+ }
+
+ .menu .menu-common {
+  width: 100%;
+ }
+
+ /* menu img */
+ .menu-img {
+  gap: 0;
+ }
+
+ .menu-img .img-common {
+  width: 44%;
+  margin: 2rem auto;
+ }
+
+ /********** Section 6 Coffee Best Seller Start*************/
+ /* best seller */
+ .best-seller {
+  flex-flow: row wrap;
+ }
+
+ .best-seller .seller-common {
+  width: 48%;
+  margin-bottom: 3rem;
+ }
+
+ /* img gallery */
+ .img-gallery {
+  padding: 0rem 0 5rem;
+ }
+
+ /**********Section 8 Testimony Start**********/
+ .testimony {
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+ }
+
+ .testimony .testimony-common {
+  width: 100%;
+  padding: 3rem;
+ }
+
+ /**********Section 10  Footer Start**********/
+ .sec10 {
+  padding-top: 3rem;
+ }
+
+ .footer {
+  flex-flow: column nowrap;
+  padding-bottom: 5rem;
+ }
+
+ .footer .foot-about,
+ .footer .foot-blog,
+ .footer .foot-service,
+ .footer .foot-question {
+  width: 100%;
+ }
+
+ /* about */
+ .foot-about .about-ul {
+  margin-bottom: 5rem;
+ }
+
+ /* blog */
+ .recent-blog-common .recent-blog-img {
+  width: 30%;
+ }
+
+ .recent-blog-text h5 {
+  width: 100%;
+ }
+
+ /* for margin b/w blog and service */
+ .recent-blog2 {
+  margin-bottom: 5rem;
+ }
+
+ /* service */
+ .foot-service .service-ul li:last-child {
+  margin-bottom: 5rem;
+ }
+
+ /* foot question */
+ .common-que {
+  margin-bottom: 2rem;
+ }
+
+ .copyright {
+  padding-bottom: 6rem;
+ }
+
+ /****************MENU PAGE START *************/
+
+ /* menu list */
+ .menu-container {
+  flex-flow: column nowrap;
+ }
+ .menu-sec-common {
+  width: 100%;
+ }
+ .menu-sec-common .h3-type {
+  font-size: 1.8rem;
+  font-weight: 700;
+ }
+
+ .item-dec {
+  font-size: 1rem;
+ }
+
+ /* menu img */
+
+ .best-product {
+  flex-flow: row wrap;
+ }
+
+ .best-product .product-common {
+  width: 48%;
+ }
+}
