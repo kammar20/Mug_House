@@ -1,2 +1,2 @@
-# Mug_Room
+# Mug_House
 Coffee Shop Website 
