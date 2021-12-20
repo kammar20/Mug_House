@@ -833,6 +833,11 @@ textarea:focus {
 .copyright {
  padding-bottom: 10rem;
 }
+
+.copyright a {
+ color: var(--whiteColor);
+ font-weight: 600;
+}
 /**********Section 10 Footer End*******************/
 /**************************************************/
 
